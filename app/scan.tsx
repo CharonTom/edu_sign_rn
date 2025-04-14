@@ -25,7 +25,7 @@ export default function ScanScreen() {
 
     // Envoie le token (données scannées) à ton API pour enregistrer la présence
     axios
-      .post("http://[TON_IP]:8000/api/attendance", { token: data })
+      .post("http://127.0.0.1:8000/api/attendance", { token: data })
       .then((response) => {
         setMessage(response.data.success);
         Alert.alert("Succès", response.data.success);
