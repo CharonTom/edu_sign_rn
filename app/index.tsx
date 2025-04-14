@@ -20,7 +20,7 @@ export default function QrScreen() {
   useEffect(() => {
     // Remplacez cette URL par celle de votre API accessible depuis votre mobile
     axios
-      .get("http://127.0.0.1:8000/api/qr")
+      .get("http://10.26.128.192:8000/api/qr")
       .then((response) => {
         setToken(response.data.token);
         setLoading(false);
